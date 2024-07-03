@@ -1,4 +1,10 @@
+if 5 > 2 :
+    print("Lima lebih besar dari dua")
+    if 5 > 2 :
+        print("Five more big then two")
 
+x = "hello"
+y = 2
 
 # #comment tar wkwk
 # print(x)
@@ -20,6 +26,9 @@ def myfunc():
 myfunc()
 
 print("Python is " + x)
+
+
+
 
 
 

@@ -1,49 +1,47 @@
+# Misalkan mini_calculator ada di file bernama Calculator.py
 from Calculator import mini_calculator
 
-class Manual:
-    def execute(self):
-        print("||     Manual Math Solve program     ||")
-        print("||   1. Use The mini Calculator      ||")
-        print("||   2. Use us for Solve mathwork    ||")
-        print("=======================================")
-        ManualMsg = input("Input : ")
+def program_penyelesaian_matematika_manual():
+    print("||     Program Penyelesaian Matematika Manual     ||")
+    print("||   1. Gunakan Kalkulator Mini                  ||")
+    print("||   2. Gunakan Kami untuk Menyelesaikan Tugas   ||")
+    print("===================================================")
+    pesan_manual = input("Input : ")
 
-        try:
-            ManualMsg = int(ManualMsg)
-        except ValueError:
-            ManualMsg = None
+    try:
+        pesan_manual = int(pesan_manual)
+    except ValueError:
+        pesan_manual = None
 
-        if ManualMsg == 1:
-            mini_calculator()
-            # Tambahkan logika untuk mini calculator di sini
-        elif ManualMsg == 2:
-            print("Solve mathwork selected")
-            # Tambahkan logika untuk solve mathwork di sini
-        else:
-            print("Invalid option")
+    if pesan_manual == 1:
+        mini_calculator()
+        # Tambahkan logika untuk kalkulator mini di sini
+    elif pesan_manual == 2:
+        print("Penyelesaian tugas matematika dipilih")
+        # Tambahkan logika untuk penyelesaian tugas di sini
+    else:
+        print("Pilihan tidak valid")
 
 def main():
-    print("=========== WELCOME ===========")
-    print("         -------------         ")
-    print("||   1.USE VOICE COMMAND     ||")
-    print("||   2.USE MANUAL COMMAND    ||")
-    print("===============================")
-    MsgOne = input("Input : ")
+    print("=========== SELAMAT DATANG ===========")
+    print("          -------------               ")
+    print("||   1. GUNAKAN PERINTAH SUARA      ||")
+    print("||   2. GUNAKAN PERINTAH MANUAL     ||")
+    print("======================================")
+    pesan_utama = input("Input : ")
 
-    # Mengonversi input dari string menjadi integer
     try:
-        MsgOne = int(MsgOne)
+        pesan_utama = int(pesan_utama)
     except ValueError:
-        MsgOne = None
+        pesan_utama = None
 
-    if MsgOne == 1:
-        print("Your option is 1")
-        # Tambahkan logika untuk Voice Command di sini
-    elif MsgOne == 2:
-        command = Manual()
-        command.execute()
+    if pesan_utama == 1:
+        print("Pilihan Anda adalah 1")
+        # Tambahkan logika untuk Perintah Suara di sini
+    elif pesan_utama == 2:
+        program_penyelesaian_matematika_manual()
     else:
-        print("Invalid option")
+        print("Pilihan tidak valid")
 
 if __name__ == "__main__":
     main()

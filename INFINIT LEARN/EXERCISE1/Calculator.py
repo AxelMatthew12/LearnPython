@@ -1,30 +1,41 @@
+class PlusOption:
+    def execute(self):
+        print("Hello world")
+
+class MinusOption:
+    def execute(self):
+        print("Hello world")
+
+class Multiplication:
+    def execute(self):
+        print("Hello world")
+
+class Distribution:
+    def execute(self):
+        print("Hello world")
+
 def mini_calculator():
-    print("\t\t===========================")
-    print("\t\t||    MINI CALCULATOR    ||")
-    print("\t\t===========================")
-    print("\t\t||                       ||")
-    print("\t\t     Option ( +,-,*,/)")
-    print("\t\t||                       ||")
-    Nb1=input("\t\t|| 1nd number:")
-    Nb2=input("\t\t|| 2nd number:")
-    Input=input("\t\t|| Option:  ")
-
-    Nb1= float(Nb1)
-    Nb2= float(Nb2)
-
-    if Input == "+":
-        result = Nb1 + Nb2
-    elif Input == "-":
-        result = Nb1 - Nb2
-    elif Input == "*":
-        result = Nb1 * Nb2
-    elif Input == "/":
-        result = Nb1/Nb2
-
-    else:
-        result = "Invaild Result"
-
-
-
-    print("\t\t|| Result:", result)
-
+    print("\t|| CALCULATOR ||")
+    print("\t||============||")
+    print("\t||   CHOOSE   ||")
+    print("\t||     +      ||")
+    print("\t||     -      ||")
+    print("\t||     *      ||")
+    print("\t||     /      ||")
+    print("\t||============||")
+    
+    choice = input("\t:")
+    
+    if choice == "+":
+        command = PlusOption()
+        command.execute()
+    elif choice == "-":
+        command = MinusOption()
+        command.execute()
+    elif choice == "*":
+        command = Multiplication()
+        command.execute()
+    elif choice == "/":
+        command = Distribution()
+        command.execute()
+        

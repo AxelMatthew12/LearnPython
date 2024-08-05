@@ -16,8 +16,14 @@ class PlusOption:
             command=PlusOption()
             command.execute()
         elif inputoption=="N":
-            command=exit
-            print("ThankYour for Using this Apps :)")
+            print("Wanna return to Main Calculator? (Y/N)")
+            inputoption2= input("Answer: ")
+            if inputoption2 =="Y":
+                command=mini_calculator()
+                command.execute()
+            elif inputoption2 =="N":
+                command=exit
+                print("ThankYour for Using this Apps :)")
 
 class MinusOption:
     def execute(self):

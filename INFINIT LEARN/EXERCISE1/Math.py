@@ -1,10 +1,10 @@
-# Misalkan mini_calculator ada di file bernama Calculator.py
+
 from Calculator import mini_calculator
 
 def program_penyelesaian_matematika_manual():
-    print("||     Program Penyelesaian Matematika Manual     ||")
-    print("||   1. Gunakan Kalkulator Mini                  ||")
-    print("||   2. Gunakan Kami untuk Menyelesaikan Tugas   ||")
+    print("||     Program Penyelesaian Matematika Manual    ||")
+    print("||   1. Use our Mini Calkulator                  ||")
+    print("||   2. Use us for Asking math problem           ||")
     print("===================================================")
     pesan_manual = input("Input : ")
 
@@ -15,10 +15,10 @@ def program_penyelesaian_matematika_manual():
 
     if pesan_manual == 1:
         mini_calculator()
-        # Tambahkan logika untuk kalkulator mini di sini
+
     elif pesan_manual == 2:
         print("Penyelesaian tugas matematika dipilih")
-        # Tambahkan logika untuk penyelesaian tugas di sini
+        
     else:
         print("Pilihan tidak valid")
 
@@ -37,7 +37,7 @@ def main():
 
     if pesan_utama == 1:
         print("Pilihan Anda adalah 1")
-        # Tambahkan logika untuk Perintah Suara di sini
+        
     elif pesan_utama == 2:
         program_penyelesaian_matematika_manual()
     else:

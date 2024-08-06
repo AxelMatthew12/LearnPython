@@ -1,9 +1,11 @@
+# Math.py
 
 from Calculator import mini_calculator
+from MathProblemSolver import MathSolver
 
 def program_penyelesaian_matematika_manual():
     print("||     Program Penyelesaian Matematika Manual    ||")
-    print("||   1. Use our Mini Calkulator                  ||")
+    print("||   1. Use our Mini Calculator                  ||")
     print("||   2. Use us for Asking math problem           ||")
     print("===================================================")
     pesan_manual = input("Input : ")
@@ -15,10 +17,9 @@ def program_penyelesaian_matematika_manual():
 
     if pesan_manual == 1:
         mini_calculator()
-
     elif pesan_manual == 2:
-        print("Penyelesaian tugas matematika dipilih")
-        
+        command = MathSolver()
+        command.execute()
     else:
         print("Pilihan tidak valid")
 
@@ -37,7 +38,6 @@ def main():
 
     if pesan_utama == 1:
         print("Pilihan Anda adalah 1")
-        
     elif pesan_utama == 2:
         program_penyelesaian_matematika_manual()
     else:

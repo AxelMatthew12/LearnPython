@@ -43,8 +43,14 @@ class MinusOption:
             command= MinusOption()
             command.execute()
         elif inputoption=="N":
-            command=exit
-            print("Thankyou for using the Apps :) ")
+            print("Wanna back to Calculator? (Y/N)")
+            inputoption1=input("Answer: ")
+            if inputoption1 =="Y":
+                command=mini_calculator()
+                command.execute()
+            elif inputoption1 =="N":
+                command=exit
+                print("Thankyou for using the Apps :) ")
 
 class Multiplication:
     def execute(self):
@@ -63,8 +69,14 @@ class Multiplication:
             command= Multiplication()
             command.execute()
         elif inputoption=="N":
-            command=exit
-            print("Thankyou for using the Apps :) ")
+            print("Wanna back to Calculator? (Y/N)")
+            inputoption1=input("Answer: ")
+            if inputoption1 =="Y":
+                command=mini_calculator()
+                command.execute()
+            elif inputoption1 =="N":
+                command=exit
+                print("Thankyou for using the Apps :) ")
 
 
 class Distribution:
@@ -84,8 +96,14 @@ class Distribution:
             command= Distribution()
             command.execute()
         elif inputoption=="N":
-            command=exit
-            print("Thankyou for using the Apps :) ")
+            print("Wanna back to Calculator? (Y/N)")
+            inputoption1=input("Answer: ")
+            if inputoption1 =="Y":
+                command=mini_calculator()
+                command.execute()
+            elif inputoption1 =="N":
+                command=exit
+                print("Thankyou for using the Apps :) ")
 
 
 def mini_calculator():

@@ -2,7 +2,7 @@
 
 class AskaboutFormula:
     def execute(self):
-        print("Hello world")
+        print("|| 1. ")
 
 class AskaboutProblem:
     def execute(self):
